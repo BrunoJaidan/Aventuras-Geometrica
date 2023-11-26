@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Aventura Geométrica</title>
+</head>
+<header>
+    <a href="../index.html"><img src="../assets/images/icones/logotipo.png"></a>
+</header>
+
+<body background="../assets/images/icones/fundo1.png">
+    <div class="container-md">
+        <h2>Setor Círcular</h2>
+        <img src="../assets/images/icones/setorCircular.png">
+        <div class="conteudoText">
+            <h3>Setor Círcular:</h3>
+            <p>
+                Um setor circular, como uma fatia saborosa de um bolo, é uma porção de um círculo delimitada por dois raios e um arco da circunferência. Sua área pode ser calculada com base no ângulo central que ele abrange, 
+                <br>tornando-o uma ferramenta valiosa em geometria e em representações visuais, como gráficos de pizza, onde a porcentagem de um todo é ilustrada de forma clara e visualmente atraente.
+            </p>    
+            <br>
+            <h3>Fórmula da área do Setor Círcular</h3>
+            <p>
+                A área de um setor circular (ou setor de um círculo) pode ser calculada usando a seguinte fórmula:
+                <br>Área do Setor Circular = (Ângulo Central / 360°) * π * raio²
+                
+            </p>
+            <br>
+        </div>
+
+        <form class="calcular">
+            <h3>Vamos calcular a área?</h3>
+            <br>
+            <div class="mb-3">
+                <label for="raioMaior" class="form-label">Digite o raio maior:</label>
+                <input type="number" id="raioMaior" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="angulo" class="form-label">Digite o ângulo:</label>
+                <input type="number" id="angulo" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="resultado">Área total do setor circular: </label>
+                <span id="resultado"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" id="btnCalcular" class="btn btn-primary" onclick="calcSetorCircular()">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Aventura Geométrica</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

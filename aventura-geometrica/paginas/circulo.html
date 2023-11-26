@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Aventura Geométrica</title>
+</head>
+<header>
+    <a href="../index.html"><img src="../assets/images/icones/logotipo.png"></a>
+</header>
+
+<body background="../assets/images/icones/fundo1.png">
+    <div class="container-md">
+        <h2>Círculo</h2>
+        <img src="../assets/images/icones/circulo.png">
+        <div class="conteudoText">
+            <h3>O Círculo: Uma Forma Geométrica Fundamental</h3>
+            <p>
+                A área do círculo corresponde ao valor da superfície dessa figura, levando em conta a medida de seu raio (r).
+                Vale lembrar que o círculo, também chamado de disco, é uma figura geométrica que faz parte dos estudos da geometria plana.
+            </p>    
+            <br>
+            <h3>Fórmula da área do círculo</h3>
+            <p>
+                Para calcular a área do círculo devemos utilizar a seguinte fórmula:
+                começar estilo tamanho matemático 22px reto A igual a reto pi. reto r ao quadrado fim do estilo
+                Onde,
+                π: constante Pi, aproximadamente (3,1415).
+                r: raio
+                Fique Atento!
+                Lembre-se que o raio (r) corresponde a distância entre o centro e a extremidade do círculo.
+            </p>
+            <br>
+        </div>
+
+        <form class="calcCirculo">
+            <h3>Vamos calcular a área?</h3>
+            <br>
+            <div class="mb-3">
+                <label for="areaCirculo" class="form-label">Raio:</label>
+                <input type="number" id="raio" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="resultado">Área do círculo:</label>
+                <span id="resultado"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" id="btnCalcular" class="btn btn-primary" onclick="calcCirculo()">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Aventura Geométrica</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

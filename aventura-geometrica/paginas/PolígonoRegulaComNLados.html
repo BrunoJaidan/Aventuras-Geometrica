@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Aventura Geométrica</title>
+</head>
+<header>
+    <a href="../index.html"><img src="../assets/images/icones/logotipo.png"></a>
+</header>
+
+<body background="../assets/images/icones/fundo1.png">
+    <div class="container-md">
+        <h2>Polígono Regular</h2>
+        <img src="../assets/images/icones/polignoRegular.png">
+        <div class="conteudoText">
+            <h3>Polígono Regular:</h3>
+            <p>
+                Um polígono regular é uma figura geométrica fascinante que exibe uma simetria e uniformidade notáveis, caracterizada por lados de igual comprimento e ângulos internos congruentes, 
+                <br>sendo amplamente estudado na geometria devido às suas propriedades bem definidas e sua presença comum em nosso ambiente.
+            </p>    
+            <br>
+            <h3>Fórmula da área do Polígono Regular</h3>
+            <p>
+                A área de um polígono regular pode ser calculada usando a seguinte fórmula geral:
+                <br>Área do Polígono Regular = (Perímetro do Polígono x Apótema) / 2
+                
+            </p>
+            <br>
+        </div>
+
+        <form class="calcular">
+            <h3>Vamos calcular a área?</h3>
+            <br>
+
+            <div class="mb-3">
+                <p>Escolha qual calcular:</p>
+                <input type="radio" class="form-check-input" id="choose" name="choose" value= "1">
+                <label for="pentagono" class="form-label">Hexagono</label>
+                <br>
+                <input type="radio" class="form-check-input" id="choose2" name="choose" value= "2">
+                <label for="hexagono" class="form-label">Pentágono</label>
+                <br>
+                <input type="radio" class="form-check-input" id="choose3" name="choose" value= "3">
+                <label for="heptagono" class="form-label">Heptágono</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="comprimentoLado" class="form-label">Digite o tamanho do lado(em metros):</label>
+                <input type="number" id="comprimentoLado" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label for="resultado" id="labResult">Área total: </label>
+                <span id="resultado"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" id="btnCalcular" class="btn btn-primary" onclick="calcPoligon()">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 Aventura Geométrica</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

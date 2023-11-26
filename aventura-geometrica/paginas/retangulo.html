@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Aventura Geométrica</title>
+</head>
+<header>
+    <a href="../index.html"><img src="../assets/images/icones/logotipo.png"></a>
+</header>
+
+<body background="../assets/images/icones/fundo1.png">
+    <div class="container-md">
+        <h2>Retângulo</h2>
+        <img src="../assets/images/icones/retangulo.png">
+        <div class="conteudoText">
+            <h3>Retângulo:</h3>
+            <p>
+                O tronco de pirâmide é o sólido obtido da parte inferior de uma pirâmide quando realizada uma secção transversal.
+                Para calcular a área total do tronco de pirâmide, somamos as suas áreas laterias e as áreas das bases maior e menor.
+                "AT = AB + Ab + Al
+            </p>    
+            <br>
+            <h3>Fórmula da área do retângulo</h3>
+            <p>
+                A fórmula para calcular a área de um retângulo é bastante simples e direta:
+                <br>Área do Retângulo = Comprimento x Largura
+                <br> Basta multiplicar o comprimento pela largura para encontrar a área do retângulo em unidades quadradas (por exemplo, metros quadrados, centímetros quadrados, pés quadrados, etc.). Certifique-se de usar a mesma unidade de medida para ambas as dimensões para obter uma área consistente.
+                
+            </p>
+            <br>
+        </div>
+
+        <form class="calcular">
+            <h3>Vamos calcular a área?</h3>
+            <br>
+            <div class="mb-3">
+                <label for="ladoMaior" class="form-label">Lado maior:</label>
+                <input type="number" id="ladoMaior" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="ladoMenor" class="form-label">Lado menor:</label>
+                <input type="number" id="ladoMenor" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="resultado">Área do retângulo: </label>
+                <span id="resultado"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" id="btnCalcular" class="btn btn-primary" onclick="calcRetangulo()">Calcular</button>
+            </div>
+        </form>
+    </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Aventura Geométrica</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+
+
+header{
+    background-color: #222222;
+    justify-content: left;
+    padding: 10px 10px 10px 35px;
+    display: flex;
+}
+
+header img{
+   max-width: 18.4%;
+}
+
+
+.container-md{
+    padding-top: 50px;
+    padding-bottom: 50p;
+    background-color: #FEFEFE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.411);
+    align-items: center;
+    padding-bottom: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-md img{
+    padding-top: 50px;
+    max-width: 25%;
+    padding-bottom: 50px;
+}
+
+.conteudoText{
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: left;
+
+}
+
+.calcular{
+    padding: 40px;
+}
+
+.calcCirculo button{
+    color: black;
+    background-color: #00FF85;
+    border-color: #00FF85;
+
+}
+
+.calcular button{
+    color: black;
+    background-color: #00FF85;
+    border-color: #00FF85;
+}
+
+footer{
+    background-color: #222222;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+footer p{
+    margin-top: 10px;
+}
